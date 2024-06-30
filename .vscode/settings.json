@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "max30102.h": "c",
+        "string": "cpp",
+        "format": "cpp",
+        "regex": "cpp",
+        "iterator": "cpp"
+    }
+}

@@ -1,0 +1,356 @@
+art: App version:      1[0m
+[0;32mI (211) cpu_start: Compile time:     Jun 29 20�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (30) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun 29 2024 22:52:31[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=10f24h ( 69412) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=00020f4c vaddr=3ffb0000 size=02460h (  9312) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=000233b4 vaddr=40080000 size=0cc64h ( 52324) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=220d0h (139472) map[0m
+[0;32mI (166) esp_image: segment 4: paddr=000520f8 vaddr=4008cc64 size=03630h ( 13872) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) cpu_start: Multicore app[0m
+[0;32mI (198) cpu_start: Pro cpu start user code[0m
+[0;32mI (198) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (198) cpu_start: Application information:[0m
+[0;32mI (201) cpu_start: Project name:     fitness-tracker[0m
+[0;32mI (207) cpu_start: App version:      1[0m
+[0;32mI (211) cpu_start: Compile time:     Jun 29 2024 22:52:23[0m
+[0;32mI (217) cpu_start: ELF file SHA256:  8b26e6f8c...[0m
+[0;32mI (223) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (228) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (232) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (237) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (242) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (249) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 3FFB34A0 len 0002CB60 (178 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (268) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 40090294 len 0000FD6C (63 KiB): IRAM[0m
+[0;32mI (282) spi_flash: detected chip: generic[0m
+[0;32mI (285) spi_flash: flash io: dio[0m
+[0;33mW (289) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (301) main_task: Started on CPU0[0m
+[0;32mI (311) main_task: Calling app_main()[0m
+[0;32mI (311) mpu6050: Queue created successfully[0m
+[0;32mI (311) max30102: MAX30102 I2C initialized successfully[0m
+[0;32mI (411) max30102: Interrupt Status 1: 0x0[0m
+[0;32mI (411) max30102: Interrupt Status 2: 0x0[0m
+[0;32mI (411) gpio: GPIO[32]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (421) gpio: GPIO[33]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (431) gpio: GPIO[25]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (1641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (2641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (3641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (4641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (5641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (6641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (7641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (8641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (9641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (10641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (11641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (12641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (13641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (14641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (15641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (16641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (17641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (18641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (19641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (20641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (21641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (22641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (23641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (24641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (25641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (26641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (27641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (28641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (29641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (30641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (31641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (32641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (33641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (34641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (35641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (36641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (37641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (38641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (39641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (40641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (41641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (42641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (43641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (44641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (45641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (46641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (47641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (48641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (49641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (50641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (51641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (52641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (53641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (54641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (55641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (56641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (57641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (58641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (59641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (60641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (61641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (62641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (63641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (64641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (65641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (66641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (67641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (68641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (69641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (70641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (71641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (72641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (73641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (74641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (75641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (76641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (77641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (78641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (79641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (80641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (81641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (82641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (83641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (84641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (85641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (86641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (87641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (88641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (89641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (90641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (91641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (92641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (93641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (94641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (95641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (96641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (97641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (98641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (99641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (100641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (101641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (102641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (103641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (104641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (105641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (106641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (107641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (108641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (109641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (110641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (111641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (112641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (113641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (114641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (115641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (116641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (117641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (118641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (119641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (120641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (121641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (122641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (123641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (124641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (125641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (126641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (127641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (128641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (129641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (130641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (131641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (132641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (133641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (134641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (135641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (136641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (137641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (138641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (139641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (140641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (141641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (142641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (143641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (144641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (145641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (146641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (147641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (148641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (149641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (150641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (151641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (152641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (153641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (154641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (155641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (156641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (157641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (158641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (159641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (160641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (161641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (162641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (163641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (164641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (165641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (166641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (167641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (168641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (169641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (170641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (171641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (172641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (173641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (174641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (175641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (176641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (177641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (178641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (179641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (180641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (181641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (182641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (183641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (184641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (185641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (186641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (187641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (188641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (189641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (190641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (191641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (192641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (193641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (194641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (195641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (196641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (197641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (198641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (199641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (200641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (201641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (202641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (203641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (204641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (205641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (206641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (207641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (208641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (209641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (210641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (211641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (212641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (213641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (214641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (215641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (216641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (217641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (218641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (219641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (220641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (221641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (222641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (223641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (224641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (225641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (226641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (227641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (228641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (229641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (230641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (231641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (232641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (233641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (234641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (235641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (236641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (237641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (238641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (239641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (240641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (241641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (242641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (243641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (244641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (245641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (246641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (247641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (248641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (249641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (250641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (251641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (252641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (253641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (254641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (255641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (256641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (257641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (258641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (259641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (260641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (261641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (262641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (263641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (264641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (265641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (266641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (267641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (268641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (269641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (270641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (271641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (272641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (273641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (274641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (275641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (276641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (277641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (278641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (279641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (280641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (281641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (282641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (283641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (284641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (285641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (286641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (287641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (288641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (289641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (290641) fitness-tracker: Free heap size: 270268 bytes[0m
+[0;32mI (291641) fitness-tracker: Free heap size: 270268 bytes[0m
