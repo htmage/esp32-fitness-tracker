@@ -545,17 +545,18 @@ void rotary_encoder_init()
     xTaskCreate(&button_task, "button_task", 1024, NULL, 5, &task2_handle);
 }
 
-void sys_monitor_task(void *arg)
-{   
-    // char info_buf[1000];
-    while (1)
-    {
-        ESP_LOGI(TAG, "RAM left: %ld bytes", esp_get_free_heap_size());
-        // vTaskGetRunTimeStats(info_buf);
-        // printf("%s\n", info_buf);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-    }
-}
+//for performance monitoring
+// void sys_monitor_task(void *arg)
+// {   
+//     // char info_buf[1000];
+//     while (1)
+//     {
+//         ESP_LOGI(TAG, "RAM left: %ld bytes", esp_get_free_heap_size());
+//         // vTaskGetRunTimeStats(info_buf);
+//         // printf("%s\n", info_buf);
+//         vTaskDelay(1000 / portTICK_PERIOD_MS);
+//     }
+// }
 
 extern "C"
 {
@@ -565,7 +566,7 @@ extern "C"
         max30102_init();
         rotary_encoder_init();
         lcd.init();
-        xTaskCreate(sys_monitor_task, "sys_monitor_task", 8192, NULL, 5, NULL);
+        // xTaskCreate(sys_monitor_task, "sys_monitor_task", 8192, NULL, 5, NULL);
         update_screen_1(&lcd, 0, 0, selecting_item, stride_length);
         vTaskDelay(100);
         while (1)
