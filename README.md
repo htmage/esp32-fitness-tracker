@@ -47,10 +47,10 @@ This is my ESP32 Fitness Tracker Device for Microprocessor Engineering Classes
 * LovyanGFX SPI LCD graphics library
 ## Device Features
 `✅` Pedometer  
-`✅` Calculate running distance based on step counted and user-provided stride length  
-`✅` Measuring heart rate  
-`🔳` warning when user's heart rate exceed pre-set value  
-`🔳` Calculate Calories based on BMR (Basal Metabolic Rate) and MET (Metabolic Equivalent)
+`✅` Calculate running distance based on steps counted and user-provided stride length  
+`✅` Measure heart rate  
+`🔳` Warning when user's heart rate exceeds a pre-set value  
+`🔳` Calculate calories based on BMR (Basal Metabolic Rate) and MET (Metabolic Equivalent)
 
 ![Device](assets/device.png)  
 *Device image*
